@@ -1,0 +1,108 @@
+:root{
+    --primary-font-color: #042533;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    gap: .5em;
+}
+
+main, section{
+    margin: 0 2em;
+    box-shadow: .5em .01em 1em rgba(0, 0, 0, .2), -0.5em .01em 1em rgba(0, 0, 0, .2);
+    max-width: 1024px;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.hero-container{
+    padding: 2em 6em;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    color: var(--primary-font-color);
+    font-size: 3.5em;
+}
+
+h3{
+    text-align: center;
+    padding: 1.5em;
+    color: var(--primary-font-color);
+}
+
+.hero-description{
+    padding: 1em 0 2.5em 0;
+    font-size: 1.25em;
+    font-weight: 500;
+    color: var(--primary-font-color);
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.service-images{
+    display: grid;
+    padding: 0 3em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "v v i1 i2"
+        "v v i3 i4";
+    gap: 2em;
+}
+
+.video{
+    grid-area: v;
+}
+
+.item1{
+    grid-area: i1;
+}
+
+.item2{
+    grid-area: i2;
+}
+
+.item3{
+    grid-area: i3;
+}
+
+.item4{
+    grid-area: i4;
+}
+
+.menu{
+    padding-bottom: 2em;
+}
+
+.menu-items{
+    display: grid;
+    padding: 0 3em;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+}
+
+.menu-item{
+    background-color: #FEEDED;
+    padding: 1em;
+    border-radius: 15% 0 0 0;
+}
